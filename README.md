@@ -31,6 +31,8 @@ Features:
 3. Percentage of rows with TravelInsurance = 1: 35.73%
 4. Pairplot indicated no outliers were present in the data
 
+<img width="969" alt="Bank_Pairplot" src="https://github.com/bbbond3phd/PracticalApplication3_Module17/assets/161508171/dbe4ed2c-041f-4bb2-8f22-cac544ae10b6">
+
 ## Modeling: CRISP-DM Step 4
 Six total models were built.
 1. kNN
@@ -50,11 +52,11 @@ For each of these models several evaluation metrics were created:
 ## Evaluation: CRISP-DM Step 5
 Based on comparing evaluation metrics, it was clear that SVM model was the clear winner. It performed nearly identically as the SVM_GridSearchCV without the long run time.
     kNN: 
-        -Strong performance with an accuracy of: 0.7621440536013401
-        -Middle time taken to run: 0.10 seconds
-        -Correct predictions: 455 (76.2%)
-        -F1-Score: 0.7168427230046948
-        -Recall: 0.7259343075132549
+        1. Strong performance with an accuracy of: 0.7621440536013401
+        2. Middle time taken to run: 0.10 seconds
+        3. Correct predictions: 455 (76.2%)
+        4. F1-Score: 0.7168427230046948
+        5. Recall: 0.7259343075132549
     Decision Tree: 
         -Moderate performance with an accuracy of: 0.7554438860971524
         -Quickest time to run: 0.03 seconds
