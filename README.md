@@ -93,5 +93,11 @@ Tuned Models:
    d. F1-Score: 0.7638639349977205;
    e. Recall: 0.7480927230046948;
 
+![alt text](https://github.com/bbbond3phd/Capstone/blob/main/Accuracies.png)
+
+![alt text](https://github.com/bbbond3phd/Capstone/blob/main/Recall.png)
+
+![alt text](https://github.com/bbbond3phd/Capstone/blob/main/F1.png)
+
 ## Conclusion
 The analysis shows that SVM classifier provide the best performance for predicting conversion. With proper tuning and potential feature engineering, this models can be further improved to achieve better predictive accuracy. The output metrics provided clear insights making offers of travel insurance more efficient and actionable for the business.
