@@ -31,7 +31,7 @@ Features:
 3. Percentage of rows with TravelInsurance = 1: 35.73%
 4. Pairplot indicated no outliers were present in the data
 
-<img width="969" alt="Bank_Pairplot" src="https://github.com/bbbond3phd/PracticalApplication3_Module17/assets/161508171/dbe4ed2c-041f-4bb2-8f22-cac544ae10b6">
+
 
 ## Modeling: CRISP-DM Step 4
 Six total models were built.
