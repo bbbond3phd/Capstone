@@ -1,6 +1,5 @@
-# Capstone
+# Capstone Overview
 
-# Overview
 In the capstone project our goal is to use all the knowledge gained through this course and create several machine learning modles (k-nearest neighbors, logistic regression, decision trees, and support vector machines) to predict the outcome of an event and then compare the performance of the classifiers to determine which model should be selected as the best performing model.
 
 ## Business Understanding: CRISP-DM Step 1
