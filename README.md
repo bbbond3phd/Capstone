@@ -51,43 +51,46 @@ For each of these models several evaluation metrics were created:
 
 ## Evaluation: CRISP-DM Step 5
 Based on comparing evaluation metrics, it was clear that SVM model was the clear winner. It performed nearly identically as the SVM_GridSearchCV without the long run time.
-    kNN: 
-        1. Strong performance with an accuracy of: 0.7621440536013401
-        2. Middle time taken to run: 0.10 seconds
-        3. Correct predictions: 455 (76.2%)
-        4. F1-Score: 0.7168427230046948
-        5. Recall: 0.7259343075132549
-    Decision Tree: 
-        -Moderate performance with an accuracy of: 0.7554438860971524
-        -Quickest time to run: 0.03 seconds
-        -Correct predictions: 451 (75.5%)
-        -F1-Score: 0.7324546325172506
-        -Recall: 0.7314957453051643
-    Logistic Regression: 
-        -Strong performance with an accuracy of: 0.7638190954773869
-        -Very quick time to run: 0.04 seconds
-        -Correct predictions: 456 (76.4%)
-        -F1-Score: 0.7135950243102457
-        -Recall: 0.7014194542253521
-    SVM: 
-        -Best performance with an accuracy of: 0.8023450586264657
-        -Slowest time to run: 0.25 seconds
-        -Correct predictions: 479 (80.2%)
-        -F1-Score: 0.7638639349977205
-        -Recall: 0.7480927230046948
-    Tuned Models:
-    Logistic Regression using GridSearchCV:
-        -Strong performance with an accuracy of: 0.7621440536013401
-        -Very quick time to run: 60.85 seconds
-        -Correct predictions: 455 (76.2%)
-        -F1-Score: 0.7059398934398935
-        -Recall: 0.6938453638497653
-    SVM using GridSearchCV:
-        -Strong performance with an accuracy of: 0.8023450586264657
-        -Very quick time to run: 50.09 seconds
-        -Correct predictions: 479 (80.2%)
-        -F1-Score: 0.7638639349977205
-        -Recall: 0.7480927230046948
+1. kNN:
+   a. Strong performance with an accuracy of: 0.7621440536013401;
+   b. Middle time taken to run: 0.10 seconds;
+   c. Correct predictions: 455 (76.2%);
+   d. F1-Score: 0.7168427230046948;
+   e. Recall: 0.7259343075132549;
+2. Decision Tree: 
+   a. Moderate performance with an accuracy of: 0.7554438860971524;
+   b. Quickest time to run: 0.03 seconds;
+   c. Correct predictions: 451 (75.5%);
+   d. F1-Score: 0.7324546325172506;
+   e. Recall: 0.7314957453051643;
+3. Logistic Regression: 
+   a. Strong performance with an accuracy of: 0.7638190954773869;
+   b. Very quick time to run: 0.04 seconds;
+   c. Correct predictions: 456 (76.4%);
+   d. F1-Score: 0.7135950243102457;
+   e. Recall: 0.7014194542253521;
+4. SVM: 
+   a. Best performance with an accuracy of: 0.8023450586264657;
+   b. Slowest time to run: 0.25 seconds;
+   c. Correct predictions: 479 (80.2%);
+   d. F1-Score: 0.7638639349977205;
+   e. Recall: 0.7480927230046948;
 
-### Conclusion
+Tuned Models:
+
+
+5. Logistic Regression using GridSearchCV:
+   a. Strong performance with an accuracy of: 0.7621440536013401;
+   b. Very quick time to run: 60.85 seconds;
+   c. Correct predictions: 455 (76.2%);
+   d. F1-Score: 0.7059398934398935;
+   e. Recall: 0.6938453638497653;
+6. SVM using GridSearchCV:
+   a. Strong performance with an accuracy of: 0.8023450586264657;
+   b. Very quick time to run: 50.09 seconds;
+   c. Correct predictions: 479 (80.2%);
+   d. F1-Score: 0.7638639349977205;
+   e. Recall: 0.7480927230046948;
+
+## Conclusion
 The analysis shows that SVM classifier provide the best performance for predicting conversion. With proper tuning and potential feature engineering, this models can be further improved to achieve better predictive accuracy. The output metrics provided clear insights making offers of travel insurance more efficient and actionable for the business.
