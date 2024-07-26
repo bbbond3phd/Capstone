@@ -1,10 +1,13 @@
 # Capstone Overview
 
 In the capstone project our goal is to use all the knowledge gained through this course and create several machine learning modles (k-nearest neighbors, logistic regression, decision trees, and support vector machines) to predict the outcome of an event and then compare the performance of the classifiers to determine which model should be selected as the best performing model.
+The intended audience for this analysis is the marketing team within the travel company. As such, the write up should not be technical in nature and clearly provide insight and findings within the data and provide actionable next steps.
 
 ## Business Understanding: CRISP-DM Step 1
-A tour and travels company is offering travel insurance to their customers. The company wants to know which customers would be interested in buying coverage based on its database history. 
-The objective is to compare model performance against historical purchasers for predicting if future clients will purchase coverage.
+The luxury travel industry is an aspirational purchase for many people. That is because travel can be expensive. Travel can also be fraught with uncertainty. Often international travel is purchased many months, sometimes years, before departing on the trip. In effort to reduce some uncertainty and financial stress associated with a travelers purchase, tour and travel companies offer travel insurance to their customers.
+Not only does travel insurance provide peace of mind for the traveler, it also represents an increasing revenue stream for the travel company. Understanding the positive business impact of selling such a profitable product, travel companies increasingly are interested in buying coverage based on its database history.
+
+Given that background information, the objective of this capstone project is to accurately predict a target audience of prospective travel insurance purchasers using a dataset of historical purchasers.
 
 ## Data Understanding: CRISP-DM Step 2  
 Dataset description: 
