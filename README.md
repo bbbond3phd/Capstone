@@ -1,6 +1,6 @@
 # Capstone Overview
 
-In the capstone project our goal is to use all the knowledge gained through this course and create several machine learning modles (k-nearest neighbors, logistic regression, decision trees, and support vector machines) to predict the outcome of an event and then compare the performance of the classifiers to determine which model should be selected as the best performing model.
+In the capstone project our goal is to use all the knowledge gained through this course and create several machine learning models (k-nearest neighbors, logistic regression, decision trees, and support vector machines) to predict the outcome of an event and then compare the performance of the classifiers to determine which model should be selected as the best performing model.
 The intended audience for this analysis is the marketing team within the travel company. As such, the write up should not be technical in nature and clearly provide insight and findings within the data and provide actionable next steps.
 
 ## Business Understanding: CRISP-DM Step 1
@@ -19,16 +19,16 @@ The file can be found at, https://www.kaggle.com/datasets/tejashvi14/travel-insu
 Features comprising the dataset:
 1. Age (int)- age of the customer
 2. Employment Type (int)- the sector in which the customer is employed
-3. GraduateOrNot (int)- whether the customer is a college graduate or not
-4. AnnualIncome (int)- yearly income of the customer (in Indian Rupees, rounded to the nearest 50K Rupee)
+3. GraduateOrNot (obj)- whether the customer is a college graduate or not
+4. AnnualIncome (obj)- yearly income of the customer (in Indian Rupees, rounded to the nearest 50K Rupee)
 5. FamilyMembers (int)- number of members in the customer's family
-6. ChronicDisease- (int) whether the customer suffers from any health ailments (e.g., Diabetes, high BP, asthama, etc) 
-7. FrequentFlyer (int)- derived data based on customer's history of booking air tickets (minimum of four different instances in two years (2017-2019))
-8. EverTravelledAbroad (int)- has the customer ever travelled internationally
+6. ChronicDisease- (int) whether the customer suffers from any health ailments (e.g., Diabetes, high BP, asthma, etc) 
+7. FrequentFlyer (obj)- derived data based on customer's history of booking air tickets (minimum of four different instances in two years (2017-2019))
+8. EverTravelledAbroad (obj)- has the customer ever travelled internationally
 9. TravelInsurance (int, target)- did the customer purchase a travel insurance package during the introductory offering period (2019)
 
 ## Data Preparation: CRISP-DM Step 3
-### Data preparation after our initial exploration
+After an initial exploration of the data it was found to be a highly curated dataset. As a rule of thumb, any dataset with less than a 40% target observation rate is considered to be imbalanced, this dataset qualifies as imbalanced.
 1. No missing data was found in the dataset
 2. No outliers or malformed data was found
 3. Percentage of rows with TravelInsurance = 1: 35.73%
@@ -38,13 +38,25 @@ Features comprising the dataset:
 (Note: portion of full plot)
 
 ## Modeling: CRISP-DM Step 4
-Six total models were built.
-1. kNN
-2. Logistic Regression
-3. Decision Tree
-4. Support Vector Machine
-5. Decision Tree using GridSearchCV
-6. Support Vector Machine using GridSearchCV
+in total six total models were built for this analysis. All of the models selected are classification models used to predict whether or not future travelers will purchase insurance.
+
+1. k-Nearest Neighbors (kNN):
+   Classification: kNN is primarily used for classification tasks where it assigns the class of a new sample based on the majority class of its k nearest neighbors in the training data.
+
+2. Logistic Regression:
+   Classification: Logistic regression is a linear model used for binary and multi-class classification problems. It predicts the probability of a sample belonging to a specific class.
+
+3. Decision Tree:
+   Classification: Decision trees can be used for both classification and regression. When used for classification, they split the data based on feature values to classify samples into distinct categories.
+
+4. Support Vector Machine (SVM):
+   Classification: SVMs are used for classification by finding the optimal hyperplane that separates classes in a high-dimensional space. SVMs can handle binary and multi-class classification.
+
+5. Decision Tree using GridSearchCV:
+   Classification: GridSearchCV is a tool for hyperparameter tuning. When used with a decision tree classifier, it optimizes the hyperparameters of the decision tree to improve its classification performance.
+
+6. Support Vector Machine using GridSearchCV:
+   Classification: Similarly, GridSearchCV can be used with SVMs to find the best hyperparameters for classification tasks, optimizing the performance of the SVM classifier.
    
 For each of these models several evaluation metrics were created:
 1. Accuracy
@@ -52,37 +64,35 @@ For each of these models several evaluation metrics were created:
 3. F1-score
 4. Time to run the model
 5. Confusion matrix
+   
+Due to the imbalanced nature of the dataset we will not be reviewing accuracy of the model because if can be misleading for imbalanced datasets because it may be high even if the model is only predicting the majority class correctly. F1-Score will be the primary measure used to evaluate model performance because it  balances the trade-off between precision (the proportion of positive identifications that are actually correct) and recall, providing a single metric that accounts for both false positives and false negatives, making is very useful for imbalanced data.
 
 ## Evaluation: CRISP-DM Step 5
-Based on comparing evaluation metrics, it was clear that SVM model was the clear winner. It performed nearly identically as the SVM_GridSearchCV without the long run time.
+Based on comparing evaluation metrics, it was clear that SVM model was the winner. The F1-Score and the recall were both the greatest of the standard models. Using GridSearchCV for the SVM model only increased the runtime by 200x without any increase in measures.
+
+Standard models:
 1. kNN:
-   a. Strong performance with an accuracy of: 0.7621440536013401;
-   b. Middle time taken to run: 0.10 seconds;
-   c. Correct predictions: 455 (76.2%);
-   d. F1-Score: 0.7168427230046948;
-   e. Recall: 0.7259343075132549;
+   a. Middle time taken to run: 0.10 seconds;
+   b. Correct predictions: 455 (76.2%);
+   c. F1-Score: 0.7168427230046948;
+   d. Recall: 0.7259343075132549;
 2. Decision Tree: 
-   a. Moderate performance with an accuracy of: 0.7554438860971524;
-   b. Quickest time to run: 0.03 seconds;
-   c. Correct predictions: 451 (75.5%);
-   d. F1-Score: 0.7324546325172506;
-   e. Recall: 0.7314957453051643;
+   a. Quickest time to run: 0.03 seconds;
+   b. Correct predictions: 451 (75.5%);
+   c. F1-Score: 0.7324546325172506;
+   d. Recall: 0.7314957453051643;
 3. Logistic Regression: 
-   a. Strong performance with an accuracy of: 0.7638190954773869;
-   b. Very quick time to run: 0.04 seconds;
-   c. Correct predictions: 456 (76.4%);
-   d. F1-Score: 0.7135950243102457;
-   e. Recall: 0.7014194542253521;
+   a. Very quick time to run: 0.04 seconds;
+   b. Correct predictions: 456 (76.4%);
+   c. F1-Score: 0.7135950243102457;
+   d. Recall: 0.7014194542253521;
 4. SVM: 
-   a. Best performance with an accuracy of: 0.8023450586264657;
-   b. Slowest time to run: 0.25 seconds;
-   c. Correct predictions: 479 (80.2%);
-   d. F1-Score: 0.7638639349977205;
-   e. Recall: 0.7480927230046948;
+   a. Slowest time to run: 0.25 seconds;
+   b. Correct predictions: 479 (80.2%);
+   c. F1-Score: 0.7638639349977205;
+   d. Recall: 0.7480927230046948;
 
-Tuned Models:
-
-
+Tuned models:
 5. Logistic Regression using GridSearchCV:
    a. Strong performance with an accuracy of: 0.7621440536013401;
    b. Very quick time to run: 60.85 seconds;
