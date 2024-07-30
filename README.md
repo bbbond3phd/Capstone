@@ -11,21 +11,21 @@ Given that background information, the objective of this capstone project is to 
 
 ## Data Understanding: CRISP-DM Step 2  
 Dataset description: 
-Insurance was offered to some of the customers in 2019. The provided data is an extracted of the performance and sales of insurance packages during the same period.
-The data provided contains almost 2000 rows of its previous customers.
+The dataset used in this analysis is from 2019, which is prior to the COVID pandemic. Specifically, the data is an extract of the 'performance and sales of insurance packages' during the same period.
+The data provided contains almost 2,000 rows transactional data from previous customers.
 
-Dataset: the data consists of 1,986 rows. The data file can be found at https://www.kaggle.com/datasets/tejashvi14/travel-insurance-prediction-data
+The file can be found at, https://www.kaggle.com/datasets/tejashvi14/travel-insurance-prediction-data
 
-Features:
-1. Age- age of the customer
-2. Employment Type- the sector in which the customer is employed
-3. GraduateOrNot- whether the customer is a college graduate or not
-4. AnnualIncome- yearly income of the customer (in Indian Rupees, rounded to the nearest 50K Rupee)
-5. FamilyMembers- number of members in the customer's family
-6. ChronicDisease- whether the customer suffers from any health ailments e.g., Diabetes, high BP, asthama, etc) 
-7. FrequentFlyer- derived data based on customer's history of booking air tickets (minimum of four different instances in two years (2017-2019))
-8. EverTravelledAbroad- has the customer ever travelled internationally
-9. TravelInsurance- (target) did the customer purchase a travel insurance package during the introductory offering period (2019)
+Features comprising the dataset:
+1. Age (int)- age of the customer
+2. Employment Type (int)- the sector in which the customer is employed
+3. GraduateOrNot (int)- whether the customer is a college graduate or not
+4. AnnualIncome (int)- yearly income of the customer (in Indian Rupees, rounded to the nearest 50K Rupee)
+5. FamilyMembers (int)- number of members in the customer's family
+6. ChronicDisease- (int) whether the customer suffers from any health ailments (e.g., Diabetes, high BP, asthama, etc) 
+7. FrequentFlyer (int)- derived data based on customer's history of booking air tickets (minimum of four different instances in two years (2017-2019))
+8. EverTravelledAbroad (int)- has the customer ever travelled internationally
+9. TravelInsurance (int, target)- did the customer purchase a travel insurance package during the introductory offering period (2019)
 
 ## Data Preparation: CRISP-DM Step 3
 ### Data preparation after our initial exploration
