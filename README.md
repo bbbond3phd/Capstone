@@ -93,7 +93,8 @@ Standard models:
    d. Recall: 0.7480927230046948;   
 
 Tuned models:   
-5. Logistic Regression using GridSearchCV:      
+
+5. Logistic Regression using GridSearchCV:   
    a. Very quick time to run: 60.85 seconds;   
    b. Correct predictions: 455 (76.2%);   
    c. F1-Score: 0.7059398934398935;   
