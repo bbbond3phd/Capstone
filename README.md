@@ -72,25 +72,25 @@ Based on comparing evaluation metrics, it was clear that SVM model was the winne
 
 Standard models:
 1. kNN:
-   a. Middle time taken to run: 0.10 seconds;
-   b. Correct predictions: 455 (76.2%);
-   c. F1-Score: 0.7168427230046948;
-   d. Recall: 0.7259343075132549;
+   a. Middle time taken to run: 0.10 seconds;   
+   b. Correct predictions: 455 (76.2%);   
+   c. F1-Score: 0.7168427230046948;   
+   d. Recall: 0.7259343075132549;   
 2. Decision Tree: 
-   a. Quickest time to run: 0.03 seconds;
-   b. Correct predictions: 451 (75.5%);
-   c. F1-Score: 0.7324546325172506;
-   d. Recall: 0.7314957453051643;
+   a. Quickest time to run: 0.03 seconds;   
+   b. Correct predictions: 451 (75.5%);   
+   c. F1-Score: 0.7324546325172506;   
+   d. Recall: 0.7314957453051643;   
 3. Logistic Regression: 
-   a. Very quick time to run: 0.04 seconds;
-   b. Correct predictions: 456 (76.4%);
-   c. F1-Score: 0.7135950243102457;
-   d. Recall: 0.7014194542253521;
+   a. Very quick time to run: 0.04 seconds;   
+   b. Correct predictions: 456 (76.4%);   
+   c. F1-Score: 0.7135950243102457;   
+   d. Recall: 0.7014194542253521;   
 4. SVM: 
-   a. Slowest time to run: 0.25 seconds;
-   b. Correct predictions: 479 (80.2%);
-   c. F1-Score: 0.7638639349977205;
-   d. Recall: 0.7480927230046948;
+   a. Slowest time to run: 0.25 seconds;   
+   b. Correct predictions: 479 (80.2%);   
+   c. F1-Score: 0.7638639349977205;   
+   d. Recall: 0.7480927230046948;   
 
 Tuned models:   
 5. Logistic Regression using GridSearchCV:   
