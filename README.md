@@ -93,18 +93,16 @@ Standard models:
    d. Recall: 0.7480927230046948;   
 
 Tuned models:   
-5. Logistic Regression using GridSearchCV:   
-        a. Strong performance with an accuracy of: 0.7621440536013401;   
-        b. Very quick time to run: 60.85 seconds;   
-        c. Correct predictions: 455 (76.2%);   
-        d. F1-Score: 0.7059398934398935;   
-        e. Recall: 0.6938453638497653;   
+5. Logistic Regression using GridSearchCV:      
+   a. Very quick time to run: 60.85 seconds;   
+   b. Correct predictions: 455 (76.2%);   
+   c. F1-Score: 0.7059398934398935;   
+   d. Recall: 0.6938453638497653;   
 6. SVM using GridSearchCV:   
-        a. Strong performance with an accuracy of: 0.8023450586264657;   
-        b. Very quick time to run: 50.09 seconds;   
-        c. Correct predictions: 479 (80.2%);   
-        d. F1-Score: 0.7638639349977205;   
-        e. Recall: 0.7480927230046948;   
+   a. Very quick time to run: 50.09 seconds;   
+   b. Correct predictions: 479 (80.2%);   
+   c. F1-Score: 0.7638639349977205;   
+   d. Recall: 0.7480927230046948;   
 
 ![alt text](https://github.com/bbbond3phd/Capstone/blob/main/Recall.png)
 
