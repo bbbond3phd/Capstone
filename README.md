@@ -114,3 +114,23 @@ Tuned models:
 
 ## Conclusion
 The analysis shows that SVM classifier provide the best performance for predicting conversion. With proper tuning and potential feature engineering, this models can be further improved to achieve better predictive accuracy. The output metrics provided clear insights making offers of travel insurance more efficient and actionable for the business.
+
+## Summary for business audience (marketing professionals)
+### Topic: Providing travel customers the opportunity to protect their purchase
+As we know, travel is an expensive purchase. Like most large purchases, having the ability to cover a potential loss is important for most buyers. To that end, Acme Travel offers insurance coverage for upcoming travel purchase with the company. Not only is insurance an important product for the customer, it is also a large contributor to Acme Travel’s revenue stream. To that end, Acme Travel has undertaken an effort to increase conversion of this product. Below is a list of frequently asked questions about the business’s approach towards identifying customers likely to purchase insurance.
+ 
+FAQ:
+**Why is insurance important?**
+Purchased insurance offers a peace of mind surrounding the uncertainty associated with large purchase made many months in advance.
+**Who should buy insurance?**
+                All customers purchasing a trip with Acme Travel should purchase insurance, but not all will chose to cover their expensive trip.
+**How can Marketing identify likely customers?**
+                Acme Travel Data Science team built several machine learning models using historical transaction data to accurately predict customers that purchased data. The model that most correctly predicted customers having made an insurance purchase will be used in the future to generate an indicator for the Marketing team to use in effort to get more customers to purchase travel insurance.
+**How will Marketing be informed about likely customers?**
+                Working with the IT team, the Data Science team has developed a real-time solution for bookings made through the customer relation management tool (CRM) that will show a key performance indicator (KPI) at the time of booking. The Data Science team will also provide a batch file to be used for targeting for those bookings made the previous day that did not purchase insurance at time of booking.
+**How should Marketing use this data?**
+                Marketing can develop any number of strategies using this data. For example, within CRM, Marketing can develop sales scripts for the call agents to use while they are speaking to a customer at time of booking. Additionally, the predictions can be feed to the web team for use of offering during a booking made on-line. Lastly, the batch file can be used any number of ways; onboarding and segment targeting digitally, follow up email to customers, outbound calls from the sales team, etc.
+**Can Marketing trust the data?**
+                Yes. The Data Science team trained the model using historical production transactional data. Meaning, the models use Acme Travel’s own data to predict likelihood based on our own customer’s purchase behavior.
+**How long will the data be accurate?**
+                The Data Science team will monitor the production data of insurance purchases. If the team observes conversion dropping, the team will retrain the model to increase accuracy.
