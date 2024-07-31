@@ -71,22 +71,22 @@ Due to the imbalanced nature of the dataset we will not be reviewing accuracy of
 Based on comparing evaluation metrics, it was clear that SVM model was the winner. The F1-Score and the recall were both the greatest of the standard models. Using GridSearchCV for the SVM model only increased the runtime by 200x without any increase in measures.
 
 Standard models:
-1. kNN:
+1. kNN:   
    a. Middle time taken to run: 0.10 seconds;   
    b. Correct predictions: 455 (76.2%);   
    c. F1-Score: 0.7168427230046948;   
    d. Recall: 0.7259343075132549;   
-2. Decision Tree: 
+2. Decision Tree:    
    a. Quickest time to run: 0.03 seconds;   
    b. Correct predictions: 451 (75.5%);   
    c. F1-Score: 0.7324546325172506;   
    d. Recall: 0.7314957453051643;   
-3. Logistic Regression: 
+3. Logistic Regression:    
    a. Very quick time to run: 0.04 seconds;   
    b. Correct predictions: 456 (76.4%);   
    c. F1-Score: 0.7135950243102457;   
    d. Recall: 0.7014194542253521;   
-4. SVM: 
+4. SVM:    
    a. Slowest time to run: 0.25 seconds;   
    b. Correct predictions: 479 (80.2%);   
    c. F1-Score: 0.7638639349977205;   
@@ -94,17 +94,17 @@ Standard models:
 
 Tuned models:   
 5. Logistic Regression using GridSearchCV:   
-   a. Strong performance with an accuracy of: 0.7621440536013401;   
-   b. Very quick time to run: 60.85 seconds;   
-   c. Correct predictions: 455 (76.2%);   
-   d. F1-Score: 0.7059398934398935;   
-   e. Recall: 0.6938453638497653;   
+      a. Strong performance with an accuracy of: 0.7621440536013401;   
+      b. Very quick time to run: 60.85 seconds;   
+      c. Correct predictions: 455 (76.2%);   
+      d. F1-Score: 0.7059398934398935;   
+      e. Recall: 0.6938453638497653;   
 6. SVM using GridSearchCV:   
-   a. Strong performance with an accuracy of: 0.8023450586264657;   
-   b. Very quick time to run: 50.09 seconds;   
-   c. Correct predictions: 479 (80.2%);   
-   d. F1-Score: 0.7638639349977205;   
-   e. Recall: 0.7480927230046948;   
+      a. Strong performance with an accuracy of: 0.8023450586264657;   
+      b. Very quick time to run: 50.09 seconds;   
+      c. Correct predictions: 479 (80.2%);   
+      d. F1-Score: 0.7638639349977205;   
+      e. Recall: 0.7480927230046948;   
 
 ![alt text](https://github.com/bbbond3phd/Capstone/blob/main/Recall.png)
 
